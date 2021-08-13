@@ -78,15 +78,15 @@ class _HomeState extends State<Home> {
             ),
           ),
           Positioned(
-            bottom: -size.width * .045,
+            bottom: -size.width * .035,
             child: Container(
               width: size.width,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: size.width * .25,
-                    height: size.height * .25,
+                    width: size.width * .22,
+                    height: size.height * .22,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
@@ -164,6 +164,7 @@ class BNBCustomPainter extends CustomPainter {
   }
 }
 
+// ignore: must_be_immutable
 class CustomBottomNavigationBar extends StatefulWidget {
   int defaultSelectedIndex = 0;
   final Function(int) onChange;
